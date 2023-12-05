@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>A3_Q3</title>
+  </head>
+  <body>
+    <p><strong>User Information:</strong></p>
+    <p id="demo"></p>
+    <div id="content">
+      <script>
+        let fanme = "";
+        let age = "";
+        getUserInfo();
+
+        function getUserInfo() {
+          person = prompt("Please enter your name");
+          age = prompt("Please enter your age");
+        }
+
+        var str = "Hi, my name is " + person + " and I'm " + age + " years old";
+        document.write(str);
+      </script>
+    </div>
+  </body>
+</html>

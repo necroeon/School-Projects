@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A3_Q1</title>
+
+    <script>
+      function addNumber(numberArray) {
+        const sum = numberArray.reduce(add, 0);
+        function add(accumulator, a) {
+          return accumulator + a;
+        }
+        return sum;
+      }
+
+      function getCurrentDate() {
+        var date = new Date();
+        var daysOfWeek = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        var weekDay = daysOfWeek[date.getDay()];
+        var months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        var month = months[date.getMonth()];
+        var dayOfMonth = date.getDate();
+        var year = date.getFullYear();
+
+        return weekDay + ", " + month + " " + dayOfMonth + ", " + year;
+      }
+
+      function arrayToString(arrayString) {
+        const array = arrayString;
+        let text = array.toString();
+        return text;
+      }
+
+      function findMaxNumber() {
+        var bigNum = arguments[0];
+        for (var i = 0; i < arguments.length; i++) {
+          if (arguments[i] > bigNum) {
+            bigNum = arguments[i];
+          }
+        }
+        return bigNum;
+      }
+
+      function findDigits(str) {
+        var digits = str.replace(/\D/g, "");
+        return digits;
+      }
+
+      function reverseString(revString) {
+        const array = revString;
+        let rev = array.reverse();
+        return rev;
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="addNumber">
+      <h1>Function: addNumbers</h1>
+      <p id="addNumber">
+        <script>
+          document.getElementById("addNumber").innerHTML = addNumber([1, 2, 3]);
+        </script>
+      </p>
+    </div>
+
+    <div class="date">
+      <h1>Function: getCurrentDate</h1>
+      <p id="date"></p>
+      <script>
+        document.getElementById("date").innerHTML = getCurrentDate();
+      </script>
+    </div>
+
+    <div class="arrayToStr">
+      <h1>Function: arrayToString</h1>
+      <p id="arrayToStr">
+        <script>
+          document.getElementById("arrayToStr").innerHTML = arrayToString([
+            "Banana",
+            "Orange",
+            "Apple",
+            "Mango",
+          ]);
+        </script>
+      </p>
+    </div>
+
+    <div class="getMaxNum">
+      <h1>Function: findMaxNumber</h1>
+      <p id="getMaxNum"></p>
+      <script>
+        document.getElementById("getMaxNum").innerHTML = findMaxNumber(
+          3,
+          5,
+          8,
+          100,
+          20,
+          100
+        );
+      </script>
+    </div>
+
+    <div class="getDigit">
+      <h1>Function: getDigits</h1>
+      <p id="getDigits"></p>
+      <script>
+        document.getElementById("getDigits").innerHTML = findDigits("ab129c7d");
+      </script>
+    </div>
+
+    <div class="reverseString">
+      <h1>Function: reverseString</h1>
+      <p id="revString">
+        <script>
+          document.getElementById("revString").innerHTML = reverseString([
+            "Banana",
+            "Orange",
+            "Apple",
+            "Mango",
+          ]);
+        </script>
+      </p>
+    </div>
+  </body>
+</html>

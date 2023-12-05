@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WePet</title>
+  </head>
+
+  <style>
+    .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #898fff;
+    color: white;
+    }
+  </style>
+
+  <body>
+    <script src="javas.js"></script>
+    <fieldset class="header">
+        <a href="A2_Q4.html"> <img class="wepetImage" src="images/catdog.jpg" style = "display: inline" alt="WePet"> </a>
+        <h3 class="wepetText" style = "display: inline"> WePet </h3>
+        <div class = "time" id="date"></div>
+    </fieldset>
+
+    <div class="sidebar">
+      <link rel="stylesheet" type="text/css" href="design.css" />
+          <a class="active" href="A2_Q4.html">Home Page</a>
+          <a href="browsepets.html">Browse Available Pets</a>
+          <a href="find.html">Find a dog/cat</a>
+          <a href="dogcare.html">Dog Care</a>
+          <a href="catcare.html">Cat Care</a>
+          <a href="giveaway.html">Giveaway!</a>
+          <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="giveaway">
+        <form name="form2" action="#2" onsubmit="giveRequired()">
+          <fieldset class="givefield">
+            <legend style="color: rgb(108, 78, 227)" > <b>Have a pet to giveaway</b></legend>
+            <table  width="100%" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+                <form name="names">
+                  <label for="fname">Current Owner's First name: </label>
+                  <input type="text" id="fname" name="fname2" /><br /><br />
+                  <label for="lname">Current Owner's Family name: </label>
+                  <input type="text" id="lname" name="lname2" />
+                </form>
+            
+                <p>Which pet are you giving away?
+                <input type="radio" id="d" name="pet2" value="dog" />
+                <label for="d">Dog</label>
+                <input type="radio" id="c" name="pet2" value="cat" />
+                <label for="c">Cat</label><br />
+                </p>
+    
+                <label for="breed">Which breed of pet are you giving away? </label>
+                <textarea id="text" name="breed2" rows="1" cols="50"></textarea></br>
+
+                <p></p>
+
+                <label for="age">What is the age of the pet? </label>
+                <select name="age2" id="age">
+                  <option value="baby">New born</option>
+                  <option value="fivemin">Below 5</option>
+                  <option value="tenmin">Below 10</option>
+                  <option value="tenplus">Above 10</option>
+                  <option value="Less than 18">Doesn't matter</option>
+                </select>
+            
+                <p></p>
+
+                <p>What is the gender of the pet?
+                    <input type="radio" id="m" name="gender2" value="male" />
+                    <label for="m">Male</label>
+                    <input type="radio" id="c" name="gender2" value="female" />
+                    <label for="f">Female</label>
+                    <input type="radio" id="dm" name="gender2" value="deosn't matter" />
+                    <label for="dm">Doesn't matter</label><br />
+                </p>
+                    
+                <p>Does your pet get along with other dogs/cats/small children?
+                  <input type="radio" id="y" name="getalong2" value="yes" />
+                  <label for="y">Yes</label>
+                  <input type="radio" id="n" name="getalong2" value="no" />
+                  <label for="n">No</label>
+                </p>
+
+                <label class="aboutpet" for="text">About your pet:</label>
+                <textarea id="text" name="aboutpet2" rows="4" cols="50">
+                </textarea>
+                <p></p>
+                E-mail: <input type="email" id="myEmail" name="email" pattern="[a-z0-9._%+-$&^{64}]+@[a-z0-9.-{253}]+\.[A-za-z]{2,3}$">
+              </tr>
+            </table>
+          </fieldset>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Clear" />
+        </form>
+    </div>
+
+    <div class="footer">
+        <a href="footer.html"> <footer class="footertxt">Privacy/Disclaimer Statement. Supported by Chrome</footer> </a>
+    </div>
+
+    </body>
+</html>

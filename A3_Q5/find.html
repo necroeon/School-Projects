@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WePet</title>
+  </head>
+
+  <style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #898fff;
+      color: white;
+    }
+  </style>
+
+  <body>
+    <script src="javas.js"></script>
+    <fieldset class="header">
+      <a href="A2_Q4.html">
+        <img
+          class="wepetImage"
+          src="images/catdog.jpg"
+          style="display: inline"
+          alt="WePet"
+        />
+      </a>
+      <h3 class="wepetText" style="display: inline">WePet</h3>
+      <div class="time" id="date"></div>
+    </fieldset>
+
+    <div class="sidebar">
+      <link rel="stylesheet" type="text/css" href="design.css" />
+      <a class="active" href="A2_Q4.html">Home Page</a>
+      <a href="browsepets.html">Browse Available Pets</a>
+      <a href="find.html">Find a dog/cat</a>
+      <a href="dogcare.html">Dog Care</a>
+      <a href="catcare.html">Cat Care</a>
+      <a href="giveaway.html">Giveaway!</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="find">
+      <form name="form1" action="#1" onsubmit="findRequired()">
+        <fieldset class="findfield">
+          <legend style="color: rgb(108, 78, 227)">
+            <b>Find a dog/cat</b>
+          </legend>
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>&nbsp;</td>
+              <form name="names">
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname" /><br /><br />
+                <label for="lname">Family name: </label>
+                <input type="text" id="lname" name="lname" />
+              </form>
+
+              <p>
+                Pet Preference
+                <input type="radio" id="d" name="pet" value="dog" />
+                <label for="d">Dog</label>
+                <input type="radio" id="c" name="pet" value="cat" />
+                <label for="c">Cat</label><br />
+              </p>
+
+              <label for="breed">Breed Prefernce: </label>
+              <textarea id="text" name="breed" rows="1" cols="50"></textarea>
+
+              <p></p>
+
+              <label for="age">Age Preference: </label>
+              <select name="age" id="age">
+                <option value="baby">New born</option>
+                <option value="fivemin">Below 5</option>
+                <option value="tenmin">Below 10</option>
+                <option value="tenplus">Above 10</option>
+                <option value="Less than 18">Doesn't matter</option>
+              </select>
+
+              <p></p>
+
+              <p>
+                Which gender would you prefer?
+                <input type="radio" id="m" name="gender" value="male" />
+                <label for="m">Male</label>
+                <input type="radio" id="c" name="gender" value="female" />
+                <label for="f">Female</label>
+                <input
+                  type="radio"
+                  id="dm"
+                  name="gender"
+                  value="deosn't matter"
+                />
+                <label for="dm">Doesn't matter</label><br />
+              </p>
+
+              <p>
+                Do you have any other dogs/cats/small children that needs to get
+                along with your new pet?
+                <input type="radio" id="y" name="getalong" value="yes" />
+                <label for="y">Yes</label>
+                <input type="radio" id="n" name="getalong" value="no" />
+                <label for="n">No</label>
+              </p>
+            </tr>
+          </table>
+        </fieldset>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </form>
+    </div>
+
+    <div class="footer">
+      <a href="footer.html">
+        <footer class="footertxt">
+          Privacy/Disclaimer Statement. Supported by Chrome
+        </footer>
+      </a>
+    </div>
+  </body>
+</html>

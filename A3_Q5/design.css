@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    background-color: #edd7ff;
+}
+
+.header{
+    background-color: #898fff;
+    border:#898fff;
+    height: 50px;
+}
+
+.wepetText {
+  color: black;
+  position: relative;
+  bottom: 50%;
+}
+
+.wepetImage{
+    width: 7%;
+}
+
+.time{
+  position: relative;
+  float: right; 
+}
+
+.timeBrowse {
+  position: relative;
+  float: right; 
+  height: 100px;
+  width: 150px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 14%;
+  background-color: #d6c8ff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 8%;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: rgb(68, 71, 255);
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(24, 1, 106);
+  color: white;
+}
+
+div.content {
+  margin-left: 14%;
+  padding: 1px 1%;
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.about{
+  position: relative;
+  top: 17%;
+  border-color:rgb(68, 71, 255);
+  background-color: #d6c8ff ;
+}
+
+.catdoghome{
+  width: 30%;
+}
+
+.abouttxt{
+    float: right;
+    position: relative;
+}
+
+.link1img{
+    width: 150px;
+    position: relative;
+    top: 5px;
+}
+
+.link1{
+    position: relative;
+    top: 50px;
+    border-color:rgb(68, 71, 255);
+    background-color: #d6c8ff ;
+}
+
+.link1txt {
+    float: right;
+    position: relative;
+    right: 20px;
+}
+
+.link2img{
+    float: right;
+    width: 200px;
+    position: relative;
+    top: 15px;
+    right: 10px;
+}
+
+.link2{
+    position: relative;
+    top: 70px;
+    border-color:rgb(68, 71, 255);
+    background-color: #d6c8ff ;
+}
+
+.link2txt {
+    float: left;
+    position: relative;
+    left: 20px;
+}
+
+.link3{
+    position: relative;
+    top: 90px;
+    border-color:rgb(68, 71, 255);
+    background-color: #d6c8ff ;
+}
+
+.link3txt {
+   text-align: center;
+}
+
+/*browsepets.html*/
+
+.browsepets{
+  position: relative;
+  left: 27%;
+  width: 60%;
+  text-align: center;
+  bottom: 30px;
+}
+
+.petfimg{
+  width: 250px;
+}
+
+.allpets{
+  position: relative;
+  left: 27%;
+  width: 60%;
+  text-align: center;
+  bottom: 30px;
+}
+
+
+/*find.html*/
+
+.find{
+  position: relative;
+  left: 27%;
+  width: 60%;
+  text-align: center;
+}
+
+/*dogcare*/
+
+.dogcaretxt{
+  text-align: center;
+}
+
+.catcaretxt{
+  text-align: center;
+}
+
+.email{
+  position:relative;
+  float: center;
+  bottom: 20%;
+}
+
+.giveaway{
+  position: relative;
+  left: 27%;
+  width: 60%;
+  text-align: center;
+}
+
+.aboutpet{
+  position: relative;
+  bottom:30px;
+}
+
+.contact{
+  position: relative;
+  left: 27%;
+  width: 60%;
+  text-align: center;
+}
+
+.footertxt{
+  text-align: center;
+  color:black
+}
